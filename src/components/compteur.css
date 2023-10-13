@@ -1,0 +1,50 @@
+#container{
+    height: auto;
+    width: 40vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+#cp{
+    font-family:'Arial, Helvetica, sans-serif';
+    height:15vh;
+    width: 40vw;
+    border: 3px solid blue;
+    border-radius: 10px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+button{
+    cursor: pointer;
+    font-family:'Arial, Helvetica, sans-serif';
+    width:130px ;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
