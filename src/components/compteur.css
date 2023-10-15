@@ -1,5 +1,7 @@
+
+
 #container{
-    height: auto;
+    height: 100vh;
     width: 40vw;
     padding: 0;
     margin: 0;
@@ -23,12 +25,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
-    align-items: center;
-
-   
+    align-items: center;  
 }
+
 button{
     cursor: pointer;
     font-family:'Arial, Helvetica, sans-serif';
@@ -40,7 +41,15 @@ button{
     margin-top: 20px;
     background-color: blue;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+button:disabled{
+    border: .5px outset red;
+    box-shadow: 2px 2px 2px blue;
+}
+button:active{
+    transform: scale(.99);
 }
 
 

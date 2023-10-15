@@ -32,31 +32,31 @@ export default class Compteur extends Component{
     render(){
         return <div id='container'>
 
-            <Valeur p={this.state.compteur}/>
-            
-            <div className='btns'>
-                <button onClick={this.Incrementer}>Incrementer</button>
-                <button onClick={this.Decrementer}>Decrementer</button>
-                <button onClick={this.Initialiser}>Initialiser</button>
-            </div>
+                    <Valeur p={this.state.compteur}/>
+                    
+                    <div className='btns'>
+                        <button onClick={this.Incrementer}>Incrementer</button>
+                        <button onClick={this.Decrementer}>Decrementer</button>
+                        <button onClick={this.Initialiser}>Initialiser</button>
+                    </div>
 
-            <fieldset className='btns' >
-                <legend>Pas d'incrementation</legend>
-                <button onClick={() => this.setState({pasI:1})} disabled={this.state.pasI===1}>1</button>
-                <button onClick={() => this.setState({pasI:2})} disabled={this.state.pasI===2}>2</button>
-                <button onClick={() => this.setState({pasI:3})} disabled={this.state.pasI===3}>3</button>
-                <button onClick={() => this.setState({pasI:4})} disabled={this.state.pasI===4}>4</button>
-            </fieldset> 
+                    <fieldset className='btns' >
+                        <legend>Pas d'incrementation</legend>
+                        <button onClick={() => this.setState({pasI:1})} disabled={this.state.pasI===1}>1</button>
+                        <button onClick={() => this.setState({pasI:2})} disabled={this.state.pasI===2}>2</button>
+                        <button onClick={() => this.setState({pasI:3})} disabled={this.state.pasI===3}>3</button>
+                        <button onClick={() => this.setState({pasI:4})} disabled={this.state.pasI===4}>4</button>
+                    </fieldset> 
 
-            <fieldset className='btns'>
-                <legend>Pas decrementation</legend>
-                <button onClick={() => this.setState({pasD:1})} disabled={this.state.pasD===1}>1</button>
-                <button onClick={() => this.setState({pasD:2})} disabled={this.state.pasD===2}>2</button>
-                <button onClick={() => this.setState({pasD:3})} disabled={this.state.pasD===3}>3</button>
-                <button onClick={() => this.setState({pasD:4})} disabled={this.state.pasD===4}>4</button>
-            </fieldset> 
+                    <fieldset className='btns'>
+                        <legend>Pas decrementation</legend>
+                        <button onClick={() => this.setState({pasD:1})} disabled={this.state.pasD===1}>1</button>
+                        <button onClick={() => this.setState({pasD:2})} disabled={this.state.pasD===2}>2</button>
+                        <button onClick={() => this.setState({pasD:3})} disabled={this.state.pasD===3}>3</button>
+                        <button onClick={() => this.setState({pasD:4})} disabled={this.state.pasD===4}>4</button>
+                    </fieldset> 
 
 
-        </div>
+                </div>
     }
 }
